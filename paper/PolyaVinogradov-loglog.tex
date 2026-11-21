@@ -95,10 +95,10 @@ hypothesis.
 
 Corollary~\ref{cor:uncond} rests on the theorem that $\mathrm H(7/8)$ holds.
 That theorem was announced by OpenAI in October 2026 together with a proof
-written in Lean~4 over Mathlib~\cite{openai}. The deduction of
-Corollary~\ref{cor:uncond} from that formal theorem is itself checked in Lean,
-and the repository~\cite{repo} compiles the formal proof of $\mathrm H(7/8)$
-together with it (Section~\ref{sec:lean}).\footnote{A kernel check establishes that the
+written in Lean~4 over Mathlib~\cite{openai}. We have compiled that proof,
+all 2,924 of its files, together with our own, and the Lean kernel accepts
+Corollary~\ref{cor:uncond} with only the three standard axioms of Lean
+(Section~\ref{sec:lean}).\footnote{A kernel check establishes that the
 formal statement follows from the axioms of Lean's type theory together with
 \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}. The formal
 statement is
@@ -1064,11 +1064,11 @@ and $\mathrm H(7/8)$ is \texttt{PolyaRH.SevenEighths}. The main formal statement
 \end{itemize}
 In each, the bound reads $\|\sum_{n\in(0,T]}\chi(n)\|\le C\sqrt q\log\log q$ for all
 natural numbers $T$, with $\chi$ primitive modulo $q\ge3$, which is the statement
-for real $x$. For the statements with an explicit hypothesis the command
-\texttt{\#print axioms} reports only \texttt{propext}, \texttt{Classical.choice}
-and \texttt{Quot.sound}; the same output for the unconditional statements,
-which also cover OpenAI's 2,924 files, is recorded in the file
-\texttt{axioms.txt} of the repository. There is no \texttt{sorry}, no new axiom and no
+for real $x$. The command \texttt{\#print axioms} reports only
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound} for every
+one of them, including the unconditional statements, whose proofs pass through
+all 2,924 files of OpenAI's library; the output is the file \texttt{axioms.txt}
+of the repository. There is no \texttt{sorry}, no new axiom and no
 \texttt{native\_decide}.
 
 The Lean library is organised as in the text: \texttt{Vinogradov/PV/Polya} and

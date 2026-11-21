@@ -1,0 +1,10 @@
+'PolyaRH.polya_vinogradov_of_sevenEighths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PolyaRH.polya_vinogradov_of_GRH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PolyaRH.character_sum_range_of_sevenEighths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PolyaRH.character_sum_range_of_GRH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PolyaRH.sevenEighths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PolyaRH.polya_vinogradov' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PolyaRH.character_sum_range' depends on axioms: [propext, Classical.choice, Quot.sound]
