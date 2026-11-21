@@ -1,0 +1,30 @@
+Polya-rh: the Pólya–Vinogradov inequality with log log q
+Copyright 2026 Deep Bhattacharjee
+
+The files PolyaRH.lean, PolyaRH/, Vinogradov/, Axioms.lean, AxiomsGRH.lean and paper/ are by
+Deep Bhattacharjee. Vinogradov/ is the Pólya–Vinogradov part of the Lean development in
+anaxia-research/Openproblemsforfieldsmedal1 (directory PolyaVinogradov/lean), changed only so
+that the zero-free half-plane is a hypothesis (the class PolyaRH.HalfPlane) instead of an import.
+
+This package contains the following third-party Lean 4 sources, each under the Apache License,
+Version 2.0 (LICENSE-APACHE), compiled unchanged:
+
+OAI/
+  OpenAI, the Lean library of https://github.com/openai/math (copied from the mirror
+  https://github.com/creelie/math01-openAI, commit adc7f1241b42e322a6451854ab7e4b4c146bf78a,
+  directory lean/OAI), restricted to the import closure of
+  OAI.NumberTheory.DirichletL.Nonvanishing. The GRH part of this package uses only
+  OAI/NumberTheory/DirichletL/LogarithmicControl.lean; the unconditional part uses the whole.
+
+PrimeNumberTheoremAnd/
+  https://github.com/AlexKontorovich/PrimeNumberTheoremAnd, commit
+  c39a751132c88b6e8080b74c74023fd95b3d8be0, with OpenAI's patch for Lean v4.34.1. The Selberg
+  sieve files Mathlib/NumberTheory/Sieve/{AuxResults,Basic,Selberg,SelbergBounds}.lean are by
+  Arend Mellendijk.
+
+RellichKondrachov/
+  https://github.com/abenenson/rellich-kondrachov, commit
+  70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23, with OpenAI's patch for Lean v4.34.1.
+
+The headers of Vinogradov/MRT.lean, Vinogradov/Riesz.lean, Vinogradov/ContourShift.lean and
+Vinogradov/EulerLog.lean name the OpenAI files they adapt.
