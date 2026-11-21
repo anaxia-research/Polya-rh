@@ -40,7 +40,6 @@ There is no `sorry`, no `axiom` and no `native_decide`.
 - `PolyaRH/Main.lean`, `PolyaRH/Unconditional.lean`: the final theorems.
 - `Vinogradov/`: the proof (Pólya's expansion, prime sums from the half-plane, major arcs,
   the weak Montgomery–Vaughan bound, smooth numbers).
-- `paper/`: the paper, *The Pólya–Vinogradov Inequality with log log q*.
 - `OAI/`, `PrimeNumberTheoremAnd/`, `RellichKondrachov/`: third-party code, see `NOTICE`.
 
 The code in `OAI/`, `PrimeNumberTheoremAnd/` and `RellichKondrachov/`, and the four files of

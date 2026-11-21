@@ -1,7 +1,7 @@
 Polya-rh: the Pólya–Vinogradov inequality with log log q
 Copyright 2026 Deep Bhattacharjee
 
-The files PolyaRH.lean, PolyaRH/, Vinogradov/, Axioms.lean, AxiomsGRH.lean and paper/ are by
+The files PolyaRH.lean, PolyaRH/, Vinogradov/, Axioms.lean and AxiomsGRH.lean are by
 Deep Bhattacharjee. Vinogradov/ is the Pólya–Vinogradov part of the Lean development in
 anaxia-research/Openproblemsforfieldsmedal1 (directory PolyaVinogradov/lean), changed only so
 that the zero-free half-plane is a hypothesis (the class PolyaRH.HalfPlane) instead of an import.
