@@ -1,0 +1,42 @@
+name = "PolyaRH"
+defaultTargets = ["PolyaRH", "PolyaRHUnconditional"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.34.1"
+
+[[lean_lib]]
+name = "OAI"
+roots = ["OAI.NumberTheory.DirichletL.LogarithmicControl"]
+globs = ["OAI.+"]
+leanOptions = { autoImplicit = false }
+
+[[lean_lib]]
+name = "PrimeNumberTheoremAnd"
+roots = []
+globs = ["PrimeNumberTheoremAnd.+"]
+leanOptions = { autoImplicit = false, relaxedAutoImplicit = false }
+
+[[lean_lib]]
+name = "Vinogradov"
+roots = []
+globs = ["Vinogradov.+"]
+leanOptions = { autoImplicit = false }
+
+[[lean_lib]]
+name = "PolyaRH"
+roots = ["PolyaRH"]
+globs = ["PolyaRH", "PolyaRH.Hypothesis", "PolyaRH.Main"]
+leanOptions = { autoImplicit = false }
+
+[[lean_lib]]
+name = "RellichKondrachov"
+roots = []
+globs = ["RellichKondrachov.+"]
+leanOptions = { autoImplicit = false }
+
+[[lean_lib]]
+name = "PolyaRHUnconditional"
+roots = ["PolyaRH.Unconditional"]
+leanOptions = { autoImplicit = false }
